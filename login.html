@@ -1,0 +1,59 @@
+<?php
+include("loginconfigure.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function call() {
+            alert("Register or Login to continue");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Noun Computer Family Forum</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#" onclick="call()">About</a></li>
+            <li><a href="#" onclick="call()">Contact</a></li>
+            <li><a href="#" onclick="call()">Dashboard</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="content1">
+            This is the content1
+        </div>
+        <div class="content2">
+            <h1>Login to continue</h1>
+            <form action="loginconfigure.php" method="POST">
+                <label>Matric No&nbsp;&nbsp;<i class="fa fa-id-card" style="color:red;"></i></label>
+                <input type="text" name="matric" placeholder="Enter your matric no here" required>
+
+                <label>Email&nbsp;&nbsp;<i class="fa fa-envelope" style="color:red;"></i></label>
+                <input type="text" name="email" placeholder="Enter your email here" required></i>
+
+                <label>Password&nbsp;&nbsp;<i class="fa fa-lock" style="color:red;"></i></label>
+                <input type="password" name="password" placeholder="Enter your password here" required></i>
+
+                <input type="submit" name="login" value="login">
+            </form>
+            <p>Not a member?? <a href="index.php">Register</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
