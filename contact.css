@@ -1,0 +1,156 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    background:#888;
+}
+.header{
+    background:maroon;
+    color:white;
+    text-align:center;
+    padding:20px;
+    text-shadow:2px 2px blue;
+}
+@media screen and (max-width:768px){
+    .header{
+        background:#333;
+        color:white;
+        text-align:center;
+        padding:20px;
+        text-shadow:2px 2px red;
+        font-size:7px
+    }
+}
+
+.nav ul{
+    list-style-type:none;
+    background:#666;
+    overflow:hidden;
+    padding:0;
+}
+.nav ul li{
+    float:left;
+}
+.nav ul li a{
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    display:block;
+    color:white;
+    border-radius:20px;
+}
+.nav ul li a:hover{
+    background:lightgreen;
+    color:green;
+}
+@media screen and (max-width:768px){
+    .nav ul{
+        list-style-type:none;
+        background:#222;
+        overflow:hidden;
+        padding:0;
+    }
+    .nav ul li{
+        float:left;
+    }
+    .nav ul li a{
+        text-decoration:none;
+        text-align:center;
+        padding:10px;
+        display:block;
+        color:white;
+        border-radius:15px;
+        font-size:12px;
+    }
+    .nav ul li a:hover{
+        background:lightgreen;
+        color:green;
+    }
+}
+@media screen and (max-width:425px){
+    .nav ul{
+        list-style-type:none;
+        background:#222;
+        overflow:hidden;
+        padding:0;
+    }
+    .nav ul li{
+        float:left;
+    }
+    .nav ul li a{
+        text-decoration:none;
+        text-align:center;
+        padding:10px;
+        display:block;
+        color:white;
+        border-radius:15px;
+        font-size:12px;
+    }
+    .nav ul li a:hover{
+        background:lightgreen;
+        color:green;
+    }
+    .active{
+        background:red;
+    }
+}
+
+
+.content{
+    height:400px;
+    width:100%;
+    background:#999;
+}
+
+.content1{
+    width:60%;
+    height:400px;
+    float:left;
+    background:#444;
+}
+.content2{
+    width:40%;
+    height:400px;
+    float:left;
+    background:#555;
+}
+
+@media screen and (max-width:768px){
+    .content{
+        height:500px;
+        width:100%;
+        position:absolute;
+        background:#999;
+    }
+    .content1{
+        float:left;
+        width:60%;
+        height:550px;
+        /*display:none;*/
+    }
+    .content2{
+        width:100%;
+        float:left;
+        height:550px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .content{
+        height:600px;
+        width:100%;
+        /*background:red;*/
+    }
+    .content1{
+        width:100%;
+        height:300px;
+        background:orange;
+    }
+    .content2{
+        width:100%;
+        height:300px;
+        background:maroon;
+    }
+    
+}

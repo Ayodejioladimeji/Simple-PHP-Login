@@ -1,0 +1,92 @@
+=<?php
+include('configure.php');
+
+$id=$_SESSION['id'];
+$firstname=$_SESSION['firstname'];
+$lastname=$_SESSION['lastname'];
+$username=$_SESSION['username'];
+$matric=$_SESSION['matric'];
+$email=$_SESSION['email'];
+$success=$_SESSION['success'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>NOUN COMPUTER FAMILY</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="about.php">About</a></li>
+            <li><a href=contact.php>Contact</a></li>
+            <li><a href="dashboard.php" class="active">Dashboard</a></li>
+            <li><a href="logout.php">Logout</a></li>
+            <li><a href="updat.html">Update Profile</a></li>
+
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="main1">
+            <h2><?php echo $email;?></h2>
+        </div>
+
+        <div class="main2">
+            <h1>dashboard</h1>
+            <marquee>
+                <p style="color:yellow">Welcome&nbsp;&nbsp;<?php echo $firstname; ?> &nbsp;<?php echo $lastname; ?></p>
+            </marquee>
+
+            <div class="content">
+                <div class="main-content1">
+                    <div class="left1">
+                        <h2>Firstname</h2>
+                    </div>
+                    <div class="left2">
+                        <h2>Lastname</h2>
+                    </div>
+                    <div class="left3">
+                        <h2>Username</h2>
+                    </div>
+                    <div class="left4">
+                        <h2>Matric No</h2>
+                    </div>
+                    <div class="left5">
+                        <h2>Email</h2>
+                    </div>
+                </div>
+
+                <div class="main-content2">
+                    <div class="left1">
+                        <h2><?php echo $firstname; ?></h2>
+                    </div>
+                    <div class="left2">
+                        <h2><?php echo $lastname; ?></h2>
+                    </div>
+                    <div class="left3">
+                        <h2><?php echo $username; ?></h2>
+                    </div>
+                    <div class="left4">
+                        <h2><?php echo $matric; ?></h2>
+                    </div>
+                    <div class="left5">
+                        <h2><?php echo $email; ?></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
